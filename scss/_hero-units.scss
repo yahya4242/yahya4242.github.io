@@ -1,0 +1,29 @@
+.hero-unit {
+    background: url('../img/hero-unit-background-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    header {
+        margin-top: 5px;
+
+        .logo>svg {
+            width: 250px;
+        }
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .hero-unit-subheading {
+        color: #9ACFF6;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+
+}
