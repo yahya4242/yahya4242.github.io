@@ -38,9 +38,11 @@ p {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  padding: 50px 0;
 }
 .hero-unit header {
   margin-top: 5px;
+  align-self: flex-end;
 }
 .hero-unit header .logo > svg {
   width: 250px;
@@ -57,15 +59,51 @@ p {
   margin-bottom: 45px;
 }
 
+@media only screen and (max-width: 576px) {
+  .hero-unit {
+    text-align: center;
+    background: url("../img/hero-unit-background-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .hero-unit .hero-unit-heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .hero-unit .hero-unit-subheading {
+    font-size: 14px;
+  }
+  .hero-unit header {
+    margin-top: 5px;
+    align-self: center;
+  }
+  .hero-unit header .logo > svg {
+    width: 150px;
+  }
+}
 .btn {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  border: 0;
+  border: none;
   padding: 15px 23px;
 }
 .btn.btn-primary {
   background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
+  transition: background 0.2s linear;
+}
+
+.btn-primary:hover {
+  background: #3c037f;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.btn-primary:focus {
+  background: #3c037f;
+  border: 1px solid white;
+  border-radius: 4px;
 }

@@ -3,9 +3,11 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    padding: 50px 0;
 
     header {
         margin-top: 5px;
+        align-self: flex-end;
 
         .logo>svg {
             width: 250px;
@@ -24,6 +26,34 @@
         font-weight: 600;
         margin-bottom: 45px;
     }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero-unit {
+        text-align: center;
+        background: url('../img/hero-unit-background-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+
+        .hero-unit-heading {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        .hero-unit-subheading {
+            font-size: 14px;
+        }
+
+        header {
+            margin-top: 5px;
+            align-self: center;
 
 
+            .logo>svg {
+                width: 150px;
+            }
+        }
+
+    }
 }
