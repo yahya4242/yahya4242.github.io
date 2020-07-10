@@ -1,6 +1,16 @@
 html,
 body {
   font-family: "open sans", sans-serif;
+  color: #423D3F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3c037f;
 }
 
 h1 {
@@ -106,4 +116,48 @@ p {
   background: #3c037f;
   border: 1px solid white;
   border-radius: 4px;
+}
+
+.content-section {
+  padding: 80px 0;
+}
+.content-section.content-section-centered {
+  text-align: center;
+}
+
+.portfolio-cards {
+  margin-top: 60px;
+  padding: 20px 40px 0px 40px;
+}
+.portfolio-cards .portfolio-card {
+  background: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.portfolio-cards .portfolio-card .portfolio-card-image {
+  background-size: cover;
+  background-position: center;
+  height: 210px;
+  border-bottom: 2px solid #3c037f;
+}
+.portfolio-cards .portfolio-card .portfolio-card-information {
+  padding: 25px 5px;
+}
+.portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3c037f;
+}
+.portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-credits {
+  display: block;
+  color: #a7a7a7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 14px;
 }
